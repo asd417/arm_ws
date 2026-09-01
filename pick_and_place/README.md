@@ -1,4 +1,4 @@
-***Pick and Place***
+**Pick and Place**
 
 A simple task of picking up objects on the table and placing it on a wooden plate.
 
