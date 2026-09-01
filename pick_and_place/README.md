@@ -10,7 +10,8 @@ While the loss decreased and it appeared to have converged, it converged to a lo
 
 The video below shows that the arm can position its effector toward the object but it fails the properly control the gripper to securely hold the object.
 
-<video src="https://raw.githubusercontent.com/asd417/arm_ws/main/pick_and_place/try1/20260901%20093354_encoded.mp4" controls muted width="640"></video>
+<!-- PASTE THE GITHUB ATTACHMENT URL ON THE LINE BELOW (bare URL, own line, no markdown syntax) -->
+PASTE_VIDEO_URL_HERE
 
 This may be due to the camera's position which, sometimes, the arm can block the view of the object.
 
