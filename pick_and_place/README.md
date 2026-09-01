@@ -10,8 +10,11 @@ While the loss decreased and it appeared to have converged, it converged to a lo
 
 The video below shows that the arm can position its effector toward the object but it fails the properly control the gripper to securely hold the object.
 
-<!-- PASTE THE GITHUB ATTACHMENT URL ON THE LINE BELOW (bare URL, own line, no markdown syntax) -->
-PASTE_VIDEO_URL_HERE
+
+
+https://github.com/user-attachments/assets/a5ce3891-68e9-45b0-8e1c-d93bd9a74999
+
+
 
 This may be due to the camera's position which, sometimes, the arm can block the view of the object.
 
