@@ -1,23 +1,16 @@
 **Pick and Place**
 
-A simple task of picking up objects on the table and placing it on a wooden plate.
+![Metrics](./try2/setup.png)
 
-Training turned out to be harder than it first appeared.
+The setup for the second trial applies the needed changes from the first attempt. The over-arching is now positioned so that the arm no longer occludes the object position like before.
 
-![Metrics](./try1/metrics.png)
+The training however was still unsuccessful despite two different hyperparameter settings. The first setup uses learning rate of 1e-4 while the second uses 1e-5. The loss turned out to be lower for the higher learning rate, indicating that the low learning rate of 1e-5 quickly found the local minima. 
 
-While the loss decreased and it appeared to have converged, it converged to a local minima.
+![Metrics1](./try2/metrics1.png)
 
-The video below shows that the arm can position its effector toward the object but it fails the properly control the gripper to securely hold the object.
-
-
-
-https://github.com/user-attachments/assets/a5ce3891-68e9-45b0-8e1c-d93bd9a74999
+![Metrics2](./try2/metrics2.png)
 
 
+With the limited resource (a single laptop with RTX 3080), it is challenging to train optimally. To combat this, the next trial will simplify the task to picking up 1 object.
 
-This may be due to the camera's position which, sometimes, the arm can block the view of the object.
-
-Another potential issue is that the object has the same white color as the arm and the controller may not effectively pick up the object's position from the video feed.
-
-Lastly, the camera input gets cropped to 512x512, further signalling the need to reposition the camera closer to the workspace.
+There was also a problem with the dataset as well. I was recording the dataset so each episode would include the 'return to idle position' action at the end of the episode however some reading showed that it is better to hold the final position of the robot for 2-3 seconds after the successful demonstration. I will address this issue in the next trial.
